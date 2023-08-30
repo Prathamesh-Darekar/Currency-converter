@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="dollar-sign-solid.svg">
+    <title>Currency converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <p>Currency-converter</p>
+        </div>
+        <div class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Convert</a>
+            <a href="#" id="footer">Footer</a>
+        </div>
+    </div>
+    <div class="main_body">
+        <div class="input">
+            <div class="value">
+                <label for="value">Enter the value</label>
+                <input type="number" id="value" class="a" placeholder="  Enter the value">
+            </div>
+            <div class="currency">
+                <label for="currency">Enter the currency</label>
+                <select class="a" id="dropdown">
+                    <option value="INR">Indian Rupee</option>
+                    <option value="USD">US dollar</option>
+                    <option value="JPY">Japanese Yen</option>
+                    <option value="IDR">Inonesian rupiah</option>
+                    <option value="CNY">Chinese Yuan</option>
+                    <option value="EUR">Euro</option>
+                </select>
+            </div>
+            <button id="Btn">Generate</button>
+        </div>
+        <div class="output">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Serial N.o</th>
+                        <th>Currency</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        hi
+    </div>
+    <script src="currency.js"></script>
+</body>
+
+
+</html>
