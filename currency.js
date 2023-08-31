@@ -15,7 +15,7 @@ async function cur_value(val, currency) {
                 <tr>
                     <td>${i++}</td>
                     <td>${cur2.data[key].code}</td>
-                    <td>${(((1 / cur2.data[currency]["value"]) * val) / (1 / cur2.data[key]["value"])).toPrecision(4)}</td>
+                    <td>${(((1 / cur2.data[currency]["value"]) * val) / (1 / cur2.data[key]["value"])).toFixed(3)}</td>
                 </tr>`
     }
     tableBody.innerHTML = str; 
