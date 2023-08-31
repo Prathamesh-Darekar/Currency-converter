@@ -1,6 +1,7 @@
 let url = "https://api.currencyapi.com/v3/latest?apikey=cur_live_HjhybTUE93aeCQQTNpmxKJrTExNgmtLfSE2Jx3Oz";
 let str = ""
 let inputVal = 0
+let i=1
 const tableBody = document.querySelector("tbody")
 let btn = document.querySelector("#Btn")
 
@@ -12,7 +13,7 @@ async function cur_value(val, currency) {
     for (let key of Object.keys(cur2.data)) {  //object.keys() returns array (here each index will have currecy code)
         str += `
                 <tr>
-                    <td>${key}</td>
+                    <td>${i++}</td>
                     <td>${cur2.data[key].code}</td>
                     <td>${(((1 / cur2.data[currency]["value"]) * val) / (1 / cur2.data[key]["value"])).toPrecision(4)}</td>
                 </tr>`
@@ -42,6 +43,8 @@ btn.addEventListener("click", () => {
 function resetTable() {
     tableBody.innerHTML = "";
 }
+
+
 
 
 
