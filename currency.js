@@ -25,6 +25,7 @@ async function cur_value(val, currency) {
 
 btn.addEventListener("click", () => {
     str = ""
+    i=1
     resetTable()  //to remove all previously entered values in the table
     let input = document.querySelector("input")
     inputVal = input.value
